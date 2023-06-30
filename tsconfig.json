@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "es6", 
+      "module": "commonjs", // specifying that your TypeScript code will be compiled to CommonJS modules, which is the module system used by Node.js
+      "strict": true, /* Enable all strict type-checking options. */
+      "strictPropertyInitialization": false,
+      "moduleResolution": "node", 
+      "baseUrl": ".", 
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      /**
+       esModuleInterop": true, umożliwia interoperacyjność między modułami CommonJS i ES. To ustawienie umożliwia używanie 'import' 
+       w kodzie TypeScript nawet w przypadku kierowania na system modułów CommonJS. Kompilator TypeScript automatycznie tłumaczy 
+       'import' na odpowiednie wywołania require podczas procesu kompilacji.
+      */
+      "esModuleInterop": true,
+      "experimentalDecorators": true, 
+      "emitDecoratorMetadata": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    }
+  }
